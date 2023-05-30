@@ -28,4 +28,6 @@ public interface BeerClient {
     Mono<BeerDTO> updateBeerById(BeerDTO beerDTO);
 
     Mono<BeerDTO> patchBeerById(BeerDTO beerDTO);
+
+    Mono<Void> deleteBeerById(BeerDTO beerDTO);
 }
