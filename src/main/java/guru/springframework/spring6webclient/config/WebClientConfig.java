@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
-public class WenClientConfig implements WebClientCustomizer {
+public class WebClientConfig implements WebClientCustomizer {
     private final String rootUrl;
 
-    public WenClientConfig(@Value("${webclient.rooturl}") String rootUrl) {
+    public WebClientConfig(@Value("${webclient.rooturl}") String rootUrl) {
         this.rootUrl = rootUrl;
     }
 
